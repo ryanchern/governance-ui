@@ -171,7 +171,7 @@ export async function getConfigInstruction({
       serializeInstructionToBase64(configInstruction)
     )
 
-    const initStrikeInstruction = await so.createInitStrikeReversibleInstruction(
+    const initStrikeInstruction = await so.createInitStrikeInstruction(
       new BN(form.strike),
       form.soName,
       //authority sol wallet
